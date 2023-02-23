@@ -24,8 +24,7 @@ exports.Register = async (req, res) => {
 
 exports.Login = async (req, res) => {
     try {
-        const { email } = req.body;
-        let getUser = await Users.find({ email })
+        let getUser = await Users.find(req.body)
 
         // console.log(getUser, getUser.length)
 
