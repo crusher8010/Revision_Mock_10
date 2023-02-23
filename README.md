@@ -1,6 +1,6 @@
 This is simply backend data of revision Mock-10 Flight-Booking System.
 
-##APIS
+## APIS
 
 User Model
 In this model we have two endpoints for login and registration api end points which will check for new User and existing user.
