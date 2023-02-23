@@ -77,7 +77,7 @@ exports.deleteFlight = async (req, res) => {
     try {
         const id = req.params.id;
 
-        Flights.findByIdAndDelete(id);
+        await Flights.findByIdAndDelete(id);
 
         res.status(204).json({
             status: "success",
